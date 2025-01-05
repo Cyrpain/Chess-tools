@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Move the Bishop</title>
+  <link rel="stylesheet" href="bishop_move.css">
+  <script>
+    // Function to navigate to different pages
+    function navigateTo(url) {
+      window.location.href = url;
+    }
+  </script>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Menu</h2>
+    <button onclick="navigateTo('chessboard_quiz/index.html')">Chessboard Tile Quiz</button>
+    <button onclick="navigateTo('best_knight_move/knight_move.html')">How to move the knight?</button>
+    <button onclick="navigateTo('bishop_move/bishop_move.html')">Is this bishop move possible?</button>
+  </div>
+
+  <div class="game-container">
+    <h1>Move the Bishop</h1>
+    <p>Is the bishop able to move between the two squares?</p>
+    
+    <p id="game-description"></p>
+    
+    <button id="possible-btn">Possible</button>
+    <button id="impossible-btn">Impossible</button>
+    
+    <p id="message"></p>
+    <p id="score">Score: 0</p>
+  </div>
+
+  <script src="bishop_move.js"></script>
+</body>
+</html>

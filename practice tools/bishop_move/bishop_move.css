@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  color: white;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar button:hover {
+  background-color: #0056b3;
+}
+
+/* Game Container */
+.game-container {
+  margin-right: 220px; /* Leave space for the sidebar */
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+#game-description {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  margin: 20px 0;
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 10px 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Score and Feedback */
+#score {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #007bff;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 150px;
+  }
+
+  .game-container {
+    margin-right: 170px;
+    padding: 15px 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  #game-description {
+    font-size: 16px;
+  }
+}

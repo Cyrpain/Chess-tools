@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Move the Knight</title>
+  <link rel="stylesheet" href="knight_move.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Move the Knight</h1>
+    <p>Find the shortest path for the knight from the starting position to the target position.</p>
+    <p id="game-description"></p>
+    
+    <label for="user-input">Enter your moves (e.g., a2 c3 a4):</label>
+    <input type="text" id="user-input" placeholder="Your moves">
+    <button id="submit-btn">Submit</button>
+    
+    <p id="message"></p>
+    <p id="solution-display">Optimal solution: <span id="optimal-solution">--</span></p>
+    <p id="score">Score: 0</p>
+  </div>
+
+  <script src="knight_move.js"></script>
+</body>
+</html>
